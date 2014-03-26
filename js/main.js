@@ -23,7 +23,7 @@ $( document ).ready( function() {
   var inputs   = $( '[type="range"]' );
   var firstClick = true;
   var count = 0;
-  var maxNGrams = 10;
+  var maxNGrams = 1000;
 
   // Update OCEAN array
   inputs.change( function() {
@@ -59,7 +59,6 @@ $( document ).ready( function() {
     }
     return value;
   }
-
 
   function generator() {
     var r = 7*getRandomArbitrary(-1.0, 1.0);
