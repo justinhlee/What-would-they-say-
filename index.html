@@ -5,66 +5,94 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>What would they say?</title>
         <meta name="viewport" content="width=device-width">
-
-        <!-- Custom CSS -->
-        
+        <link rel="stylesheet" href="stylesheets/normalize.css">
         <link rel="stylesheet" href="stylesheets/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
 
     </head>
     <body>
+
+
+
   
     <div class="content">
       <div class="row">
-        <div class="col-2"><br></div>
-        <div class="col-4">
-          <h1>What would <em>they</em> say?</h1>
-          <hr><br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2"><br></div>
-        <div class="col-4">
-          <div class="generated">
-            Your text will appear here.
+        <div class="col-2">
+
+        <div class="slider-panel">
+          <div class="slider">
+            <div class="label">OPENNESS</div>
+            <div class="bar">
+              <input type="range" name ="open" ></input>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="label">CONSCIENTIOUSNESS</div>
+            <div class="bar">
+              <input type="range" name ="consc" ></input>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="label">EXTRAVERSION</div>
+            <div class="bar">
+              <input type="range" name ="extra" ></input>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="label">AGREEABLENESS</div>
+            <div class="bar">
+              <input type="range" name ="agree" ></input>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="label">NEUROTICISM</div>
+            <div class="bar">
+              <input type="range" name ="neuro" ></input>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="slider-panel">
+       <center>
+          <ul>
+            <li><button class="text-toggle" id="h1-toggle">H1</button></li>
+            <li><button class="text-toggle" id="h2-toggle">H2</button></li>
+            <li><button class="text-toggle" id="h3-toggle">H3</button></li>
+            <li><button class="text-toggle" id="em-toggle"><em>i</em></button></li>
+            <li><button class="text-toggle" id="strong-toggle"><strong>B</strong></button></li>
+          </ul>
 
-      <div class="sliders">
-        <div class="row">
-          <div class="col-2"><br></div>
-          <div class="col-2"><p>Openness</p></div>
-          <div class="col-4"> <input type="range" name ="open" ></input> </div>
+            <button id = "append">APPEND</button><br>
+            <button id ="generate">RESET</button>
+            
+            </center>
+            
         </div>
-        <div class="row">
-          <div class="col-2"><br></div>
-          <div class="col-2"><p>Conscientiousness</p></div>
-          <div class="col-4"> <input type="range" name ="consc"></input></div>
+        
+
+
+        
+          
+            
+          
+   
+
         </div>
-        <div class="row">
-          <div class="col-2"><br></div>
-          <div class="col-2"><p>Extraversion</p></div>
-          <div class="col-4"> <input type="range" name ="extra"></input></div>
-        </div>
-        <div class="row">
-          <div class="col-2"><br></div>
-          <div class="col-2"><p>Agreeableness</p></div>
-          <div class="col-4"> <input type="range" name ="agree"></input></div>
-        </div>
-        <div class="row">
-          <div class="col-2"><br></div>
-          <div class="col-2"><p>Neuroticism</p></div>
-          <div class="col-4"> <input type="range" name ="neuro"></input></div>
-        </div>
-      </div>
-      <!-- BUTTONS -->
-      <div class="row">
-        <div class="col-2"><br></div>
+
         <div class="col-6">
-          <button id ="generate">GENERATE</button> 
-          <button id = "append">APPEND</button><br><br>
-          <a href="http://justinlee.io/wwts/">About</a>
+            <div class="generated">
+            <p style="color:#aaa;">Your text will appear here.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <center><small>
+          "What would <em>they</em> say?"<br>
+        <a href="http://justinlee.io/wwts/">About</a></small></center>
+          
         </div>
       </div>
     </div>
